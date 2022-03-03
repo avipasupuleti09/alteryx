@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Alteryx\Alteryx - The Complete Masterclass\stores_data.xlsx|||`stores$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Input Excel</Name>
+          <AnnotationText>Importing several worksheet</AnnotationText>
+          <DefaultAnnotationText>Input Excel</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\stores_data.xlsx|||`stores$`" type="Double" />
+            <Field name="Type" size="255" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\stores_data.xlsx|||`stores$`" type="V_String" />
+            <Field name="Size" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\stores_data.xlsx|||`stores$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="30" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="3" />
+          <Fields>
+            <Field name="Store Type" />
+            <Field name="Store Type Name" />
+          </Fields>
+          <Data>
+            <r>
+              <c>A</c>
+              <c>Physical</c>
+            </r>
+            <r>
+              <c>B</c>
+              <c>Online</c>
+            </r>
+            <r>
+              <c>C</c>
+              <c>Both</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Additional+information.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="Date" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="Temperature" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="Fuel_Price" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="MarkDown1" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="MarkDown2" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="MarkDown3" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="MarkDown4" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="MarkDown5" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="CPI" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="Unemployment" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+            <Field name="IsHoliday" size="254" source="File: D:\Alteryx\Alteryx - The Complete Masterclass\Additional+information.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="57">D:\Alteryx\Alteryx - The Complete Masterclass\Load-Excel.zip|||stores_data.xlsx[`stores$`];Addional stores/stores_data.xlsx[`stores$`];Addional stores/stores_data_closed.xlsx[`stores$`]</File>
+          <FormatSpecificOptions>
+            <LargeZipFiles>False</LargeZipFiles>
+            <FirstRowData>False</FirstRowData>
+            <FileNameEncoding>0</FileNameEncoding>
+            <FileFormatInner>25</FileFormatInner>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Load-Excel.zip
+Query=stores_data.xlsx[`stores$`];...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" source="File: " type="Double" />
+            <Field name="Type" size="255" source="File: " type="V_String" />
+            <Field name="Size" source="File: " type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow5</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="f4b0fd80-f63d-4ee3-b90c-78744939b61c" />
+      <Telemetry>
+        <PreviousWorkflowId value="c8d988af-ae02-4689-bc89-5ed6ec986808" />
+        <OriginWorkflowId value="c8d988af-ae02-4689-bc89-5ed6ec986808" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

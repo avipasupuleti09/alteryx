@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="150" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="20" />
+          <Fields>
+            <Field name="date" />
+            <Field name="source" />
+            <Field name="Order Number" />
+            <Field name="purchase" />
+            <Field name="shipment" />
+            <Field name="first_name" />
+            <Field name="last_name" />
+            <Field name="home_phone" />
+            <Field name="email" />
+            <Field name="RecordID" />
+            <Field name="line" />
+            <Field name="line_sequence" />
+            <Field name="city" />
+            <Field name="province_code" />
+            <Field name="province" />
+            <Field name="postal_code" />
+            <Field name="country_code" />
+            <Field name="Shipping" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201368</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>MEGHAN</c>
+              <c>CARR</c>
+              <c>3132158741</c>
+              <c>MCARR@AOL.COM</c>
+              <c>1</c>
+              <c>11395 GRANDVILLA</c>
+              <c>1</c>
+              <c>Detroit</c>
+              <c>MI</c>
+              <c>MICHIGAN</c>
+              <c>48228</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201368</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>LAUREN</c>
+              <c>BALL</c>
+              <c />
+              <c />
+              <c>2</c>
+              <c>1244 CHESTER Way</c>
+              <c>1</c>
+              <c><![CDATA[Marietta ]]></c>
+              <c>GA</c>
+              <c>GEORGIA</c>
+              <c>30066</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201376</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>AMANDA</c>
+              <c>ENGLE</c>
+              <c>2126632244</c>
+              <c>AENGLE@YAHOO.COM</c>
+              <c>1</c>
+              <c><![CDATA[107055 73rd ST ]]></c>
+              <c>1</c>
+              <c>Puyallup</c>
+              <c>WA</c>
+              <c>WASHINGTON</c>
+              <c>98373</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201376</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>KRISTIN</c>
+              <c>ICKLES</c>
+              <c />
+              <c />
+              <c>2</c>
+              <c><![CDATA[9204 WILLOUGHBY ST ]]></c>
+              <c>1</c>
+              <c>Puyallup</c>
+              <c>WA</c>
+              <c>WASHINGTON</c>
+              <c>98373</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201378</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>EMILY</c>
+              <c>BEVEL</c>
+              <c>9195167883</c>
+              <c>EMBEV@NC.RR.COM</c>
+              <c>1</c>
+              <c>4133 MIDDLETON Way</c>
+              <c>1</c>
+              <c>Wake Forest</c>
+              <c>NC</c>
+              <c>NORTH CAROLINA</c>
+              <c>27587</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201378</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>EMILY</c>
+              <c>BEVEL</c>
+              <c>91956332127</c>
+              <c>EMBEV@nc.rr.com</c>
+              <c>2</c>
+              <c>4133 MIDDLETON Way</c>
+              <c>1</c>
+              <c>Wake Forest</c>
+              <c>NC</c>
+              <c>NORTH CAROLINA</c>
+              <c>27587</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201379</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>Christine</c>
+              <c>BAUMGARTNER</c>
+              <c>4082845113</c>
+              <c>MOMBAUM@AOL.COM</c>
+              <c>1</c>
+              <c>129 Bryan Ave.</c>
+              <c>1</c>
+              <c>San Jose</c>
+              <c>CA</c>
+              <c>CALIFORNIA</c>
+              <c>95118</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201379</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>Christine</c>
+              <c>BAUMGARTNER</c>
+              <c>4082156887</c>
+              <c>MOMBAUM@aol.com</c>
+              <c>2</c>
+              <c>129 Bryan Ave.</c>
+              <c>1</c>
+              <c>San Jose</c>
+              <c>CA</c>
+              <c>CALIFORNIA</c>
+              <c>95118</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201380</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>ALICE</c>
+              <c>STANFORD</c>
+              <c>2175146997</c>
+              <c>ASTANFORD@HOTMAIL.COM</c>
+              <c>1</c>
+              <c>955 e center st</c>
+              <c>1</c>
+              <c>Paxton</c>
+              <c>IL</c>
+              <c>ILLINOIS</c>
+              <c>60957</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201380</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>ALICE</c>
+              <c>STANFORD</c>
+              <c>2175568712</c>
+              <c>ASTANFORD@hotmail.com</c>
+              <c>2</c>
+              <c>955 e center st</c>
+              <c>1</c>
+              <c>Paxton</c>
+              <c>IL</c>
+              <c>ILLINOIS</c>
+              <c>60957</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201381</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>Dawn</c>
+              <c>KELTER</c>
+              <c>8021169885</c>
+              <c>DKELT@AOL.COM</c>
+              <c>1</c>
+              <c>P.O. Box 36</c>
+              <c>1</c>
+              <c>MILTON</c>
+              <c>NJ</c>
+              <c>NEW JERSEY</c>
+              <c>08332</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201381</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>DANIELLE</c>
+              <c>KELTER</c>
+              <c />
+              <c />
+              <c>2</c>
+              <c>2481 Pancoast Mill Rd</c>
+              <c>1</c>
+              <c>Buena</c>
+              <c>NJ</c>
+              <c>NEW JERSEY</c>
+              <c>08310</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201382</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>SUZANNE</c>
+              <c>FENTON</c>
+              <c>5152148552</c>
+              <c>SFEN@COMCAST.NET</c>
+              <c>1</c>
+              <c>1633 KENDALL street</c>
+              <c>1</c>
+              <c>weymouth</c>
+              <c>MA</c>
+              <c>MASSACHUSETTS</c>
+              <c>02189</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201382</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>SUZANNE</c>
+              <c>FENTON</c>
+              <c />
+              <c />
+              <c>2</c>
+              <c>1633 KENDALL street</c>
+              <c>1</c>
+              <c>weymouth</c>
+              <c>MA</c>
+              <c>MASSACHUSETTS</c>
+              <c>02189</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201383</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>DEBORAH</c>
+              <c>BROWN</c>
+              <c>2154451003</c>
+              <c>DBROWN@VERIZON.NET</c>
+              <c>1</c>
+              <c>719 MYRTLE Lane</c>
+              <c>1</c>
+              <c>Warminster</c>
+              <c>PA</c>
+              <c>PENNSYLVANIA</c>
+              <c>18974</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201383</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>DEBORAH</c>
+              <c>BROWN</c>
+              <c>2154415602</c>
+              <c>DBROWN@verizon.net</c>
+              <c>2</c>
+              <c>719 MYRTLE Lane</c>
+              <c>1</c>
+              <c>Warminster</c>
+              <c>PA</c>
+              <c>PENNSYLVANIA</c>
+              <c>18974</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201384</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>MELISSA</c>
+              <c>TUCKER</c>
+              <c>9135568221</c>
+              <c>MTUCKER@YAHOO.COM</c>
+              <c>1</c>
+              <c>608 garfield ave</c>
+              <c>1</c>
+              <c>kansas city</c>
+              <c>KS</c>
+              <c>KANSAS</c>
+              <c>66102</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201384</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>MELISSA</c>
+              <c>TUCKER</c>
+              <c>9135524110</c>
+              <c>MTUCKER@yahoo.com</c>
+              <c>2</c>
+              <c>6008 garfield ave</c>
+              <c>1</c>
+              <c>kansas city</c>
+              <c>KS</c>
+              <c>KANSAS</c>
+              <c>66102</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201385</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>RUSSEL</c>
+              <c>LARIO</c>
+              <c>2567743663</c>
+              <c>RLARIO@GMAIL.COM</c>
+              <c>1</c>
+              <c>525 pemberton ave</c>
+              <c>1</c>
+              <c>deltona</c>
+              <c>FL</c>
+              <c>FLORIDA</c>
+              <c>32738</c>
+              <c>US</c>
+              <c>Bill to</c>
+            </r>
+            <r>
+              <c>2019-10-03</c>
+              <c>CD087</c>
+              <c>CP2201385</c>
+              <c>online</c>
+              <c>GRND</c>
+              <c>SARAH</c>
+              <c>LARIO</c>
+              <c />
+              <c />
+              <c>2</c>
+              <c>11225 S. Vermillion Ave</c>
+              <c>1</c>
+              <c>Brownsville</c>
+              <c>TX</c>
+              <c>TEXAS</c>
+              <c>78523</c>
+              <c>US</c>
+              <c>Ship to</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="293" y="173" width="493" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>JSON Build</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="414" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="RecordID" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="date" selected="False" />
+                <Field field="source" selected="False" />
+                <Field field="Order Number" selected="True" />
+                <Field field="purchase" selected="True" />
+                <Field field="shipment" selected="False" />
+                <Field field="first_name" selected="True" />
+                <Field field="last_name" selected="True" />
+                <Field field="home_phone" selected="False" />
+                <Field field="email" selected="True" />
+                <Field field="RecordID2" selected="False" />
+                <Field field="line" selected="False" />
+                <Field field="line_sequence" selected="False" />
+                <Field field="city" selected="False" />
+                <Field field="province_code" selected="False" />
+                <Field field="province" selected="False" />
+                <Field field="postal_code" selected="True" />
+                <Field field="country_code" selected="False" />
+                <Field field="Shipping" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="318" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONBuild.JSONBuild">
+            <Position x="702" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name_Field>Name</Name_Field>
+              <StringValue_Field>Value</StringValue_Field>
+              <IntValue_Field />
+              <FloatValue_Field />
+              <BoolValue_Field />
+              <GroupFields orderChanged="False">
+                <Field name="RecordID" />
+              </GroupFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONBuild" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="594" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot;Record&quot; + &quot;.&quot; + ToString([RecordId]) + &quot;.&quot; + [Name]" field="Name" size="500" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Name = "Record" + "." + ToString([RecordId]) + "." + [Name]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="510" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" type="V_WString" size="500" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>JSON Build</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

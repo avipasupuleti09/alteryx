@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="60" y="246" width="216" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Input</Text>
+          <Font name="Lato" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="455" y="246" width="216" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output</Text>
+          <Font name="Lato" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="70" width="300" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #7</Text>
+          <Font name="Lato" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="59" y="114" width="612" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Quandl is a search engine for numerical data. The site offers access to several million financial, economic and social datasets.  Quandl indexes data from multiple sources allowing users to find and download in various formats.  All Quandl's data are accessible via an API.
+
+For this example the response from these APIs is JSON.  Our user is trying to get aggregated Annual Crime Statistics for the US dating back to 1960.  The Text Input contains the URL for the API request. Your goal is to parse the response.
+
+Hint:  After parsing the JSON, you will need to further identify the patterns within the data to effectively stage into a table for analytics.
+]]></Text>
+          <Font name="Lato" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://www.quandl.com/api/v1/datasets/DISASTERCENTER/RATES.json?&amp;trim_start=1960-12-31&amp;trim_end=2012-12-31&amp;sort_order=desc</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="486" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="53" />
+          <Fields>
+            <Field name="Date" />
+            <Field name="Total" />
+            <Field name="Violent" />
+            <Field name="Property" />
+            <Field name="Murder" />
+            <Field name="Forcible Rape" />
+            <Field name="Robbery" />
+            <Field name="Aggr Assault" />
+            <Field name="Burglary" />
+            <Field name="Larceny Theft" />
+            <Field name="Vehicle Theft" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2012-12-31</c>
+              <c>3246.1</c>
+              <c>386.9</c>
+              <c>2859.2</c>
+              <c>4.7</c>
+              <c>26.9</c>
+              <c>112.9</c>
+              <c>242.3</c>
+              <c>670.2</c>
+              <c>1959.3</c>
+              <c>229.7</c>
+            </r>
+            <r>
+              <c>2011-12-31</c>
+              <c>3292.5</c>
+              <c>387.1</c>
+              <c>2905.4</c>
+              <c>4.7</c>
+              <c>27</c>
+              <c>113.9</c>
+              <c>241.5</c>
+              <c>701.3</c>
+              <c>1974.1</c>
+              <c>230</c>
+            </r>
+            <r>
+              <c>2010-12-31</c>
+              <c>3350.4</c>
+              <c>404.5</c>
+              <c>2945.9</c>
+              <c>4.8</c>
+              <c>27.7</c>
+              <c>119.3</c>
+              <c>252.8</c>
+              <c>701</c>
+              <c>2005.8</c>
+              <c>239.1</c>
+            </r>
+            <r>
+              <c>2009-12-31</c>
+              <c>3465.5</c>
+              <c>431.9</c>
+              <c>3036.1</c>
+              <c>5</c>
+              <c>29.1</c>
+              <c>133.1</c>
+              <c>264.7</c>
+              <c>717.7</c>
+              <c>2064.5</c>
+              <c>259.2</c>
+            </r>
+            <r>
+              <c>2008-12-31</c>
+              <c>3669</c>
+              <c>457.5</c>
+              <c>3211.5</c>
+              <c>5.4</c>
+              <c>29.7</c>
+              <c>145.7</c>
+              <c>276.7</c>
+              <c>732.1</c>
+              <c>2167</c>
+              <c>314.7</c>
+            </r>
+            <r>
+              <c>2007-12-31</c>
+              <c>3730.4</c>
+              <c>466.9</c>
+              <c>3263.5</c>
+              <c>5.6</c>
+              <c>30</c>
+              <c>147.6</c>
+              <c>283.8</c>
+              <c>722.5</c>
+              <c>2177.8</c>
+              <c>363.3</c>
+            </r>
+            <r>
+              <c>2006-12-31</c>
+              <c>3808.1</c>
+              <c>473.6</c>
+              <c>3334.5</c>
+              <c>5.7</c>
+              <c>30.9</c>
+              <c>149.4</c>
+              <c>287.5</c>
+              <c>729.4</c>
+              <c>2206.8</c>
+              <c>398.4</c>
+            </r>
+            <r>
+              <c>2005-12-31</c>
+              <c>3900.5</c>
+              <c>469</c>
+              <c>3431.5</c>
+              <c>5.6</c>
+              <c>31.8</c>
+              <c>140.8</c>
+              <c>290.8</c>
+              <c>726.9</c>
+              <c>2287.8</c>
+              <c>416.8</c>
+            </r>
+            <r>
+              <c>2004-12-31</c>
+              <c>3977.3</c>
+              <c>463.2</c>
+              <c>3514.1</c>
+              <c>5.5</c>
+              <c>32.4</c>
+              <c>136.7</c>
+              <c>288.6</c>
+              <c>730.3</c>
+              <c>2362.3</c>
+              <c>421.5</c>
+            </r>
+            <r>
+              <c>2003-12-31</c>
+              <c>4067</c>
+              <c>475.8</c>
+              <c>3591.2</c>
+              <c>5.7</c>
+              <c>32.3</c>
+              <c>142.5</c>
+              <c>295.4</c>
+              <c>741</c>
+              <c>2416.5</c>
+              <c>433.7</c>
+            </r>
+            <r>
+              <c>2002-12-31</c>
+              <c>4125</c>
+              <c>494.4</c>
+              <c>3630.6</c>
+              <c>5.6</c>
+              <c>33.1</c>
+              <c>146.1</c>
+              <c>309.5</c>
+              <c>747</c>
+              <c>2450.7</c>
+              <c>432.9</c>
+            </r>
+            <r>
+              <c>2001-12-31</c>
+              <c>4162.6</c>
+              <c>504.5</c>
+              <c>3658.1</c>
+              <c>5.6</c>
+              <c>31.8</c>
+              <c>148.5</c>
+              <c>318.6</c>
+              <c>741.8</c>
+              <c>2485.7</c>
+              <c>430.5</c>
+            </r>
+            <r>
+              <c>2000-12-31</c>
+              <c>4124.8</c>
+              <c>506.5</c>
+              <c>3618.3</c>
+              <c>5.5</c>
+              <c>32</c>
+              <c>145</c>
+              <c>324</c>
+              <c>728.8</c>
+              <c>2477.3</c>
+              <c>412.2</c>
+            </r>
+            <r>
+              <c>1999-12-31</c>
+              <c>4266.5</c>
+              <c>523</c>
+              <c>3743.6</c>
+              <c>5.7</c>
+              <c>32.8</c>
+              <c>150.1</c>
+              <c>334.3</c>
+              <c>770.4</c>
+              <c>2550.7</c>
+              <c>422.5</c>
+            </r>
+            <r>
+              <c>1998-12-31</c>
+              <c>4615.5</c>
+              <c>566.4</c>
+              <c>4049.1</c>
+              <c>6.3</c>
+              <c>34.4</c>
+              <c>165.2</c>
+              <c>360.5</c>
+              <c>862</c>
+              <c>2728.1</c>
+              <c>459</c>
+            </r>
+            <r>
+              <c>1997-12-31</c>
+              <c>4927.3</c>
+              <c>611</c>
+              <c>4316.3</c>
+              <c>6.8</c>
+              <c>35.9</c>
+              <c>186.1</c>
+              <c>382.1</c>
+              <c>919.6</c>
+              <c>2891.8</c>
+              <c>505.7</c>
+            </r>
+            <r>
+              <c>1996-12-31</c>
+              <c>5087.6</c>
+              <c>636.6</c>
+              <c>4451</c>
+              <c>7.4</c>
+              <c>36.3</c>
+              <c>201.9</c>
+              <c>390.9</c>
+              <c>945</c>
+              <c>2980.3</c>
+              <c>525.7</c>
+            </r>
+            <r>
+              <c>1995-12-31</c>
+              <c>5274.9</c>
+              <c>684.5</c>
+              <c>4591.3</c>
+              <c>8.2</c>
+              <c>37.1</c>
+              <c>220.9</c>
+              <c>418.3</c>
+              <c>987.1</c>
+              <c>3043.8</c>
+              <c>560.4</c>
+            </r>
+            <r>
+              <c>1994-12-31</c>
+              <c>5373.5</c>
+              <c>713.6</c>
+              <c>4660</c>
+              <c>9</c>
+              <c>39.3</c>
+              <c>237.7</c>
+              <c>427.6</c>
+              <c>1042</c>
+              <c>3026.7</c>
+              <c>591.3</c>
+            </r>
+            <r>
+              <c>1993-12-31</c>
+              <c>5484.4</c>
+              <c>746.8</c>
+              <c>4737.7</c>
+              <c>9.5</c>
+              <c>41.1</c>
+              <c>255.9</c>
+              <c>440.3</c>
+              <c>1099.2</c>
+              <c>3032.4</c>
+              <c>606.1</c>
+            </r>
+            <r>
+              <c>1992-12-31</c>
+              <c>5660.2</c>
+              <c>757.5</c>
+              <c>4902.7</c>
+              <c>9.3</c>
+              <c>42.8</c>
+              <c>263.6</c>
+              <c>441.8</c>
+              <c>1168.2</c>
+              <c>3103</c>
+              <c>631.5</c>
+            </r>
+            <r>
+              <c>1991-12-31</c>
+              <c>5897.8</c>
+              <c>758.1</c>
+              <c>5139.7</c>
+              <c>9.8</c>
+              <c>42.3</c>
+              <c>272.7</c>
+              <c>433.3</c>
+              <c>1252</c>
+              <c>3228.8</c>
+              <c>658.9</c>
+            </r>
+            <r>
+              <c>1990-12-31</c>
+              <c>5820.3</c>
+              <c>731.8</c>
+              <c>5088.5</c>
+              <c>9.4</c>
+              <c>41.2</c>
+              <c>257</c>
+              <c>424.1</c>
+              <c>1235.9</c>
+              <c>3194.8</c>
+              <c>657.8</c>
+            </r>
+            <r>
+              <c>1989-12-31</c>
+              <c>5741</c>
+              <c>663.1</c>
+              <c>5077.9</c>
+              <c>8.7</c>
+              <c>38.1</c>
+              <c>233</c>
+              <c>383.4</c>
+              <c>1276.3</c>
+              <c>3171.3</c>
+              <c>630.4</c>
+            </r>
+            <r>
+              <c>1988-12-31</c>
+              <c>5664.2</c>
+              <c>637.2</c>
+              <c>5027.1</c>
+              <c>8.4</c>
+              <c>37.6</c>
+              <c>220.9</c>
+              <c>370.2</c>
+              <c>1309.2</c>
+              <c>3134.9</c>
+              <c>582.9</c>
+            </r>
+            <r>
+              <c>1987-12-31</c>
+              <c>5550</c>
+              <c>609.7</c>
+              <c>4940.3</c>
+              <c>8.3</c>
+              <c>37.4</c>
+              <c>212.7</c>
+              <c>351.3</c>
+              <c>1329.6</c>
+              <c>3081.3</c>
+              <c>529.5</c>
+            </r>
+            <r>
+              <c>1986-12-31</c>
+              <c>5480.4</c>
+              <c>620.1</c>
+              <c>4881.8</c>
+              <c>8.6</c>
+              <c>38.1</c>
+              <c>226</c>
+              <c>347.4</c>
+              <c>1349.8</c>
+              <c>3022.1</c>
+              <c>509.8</c>
+            </r>
+            <r>
+              <c>1985-12-31</c>
+              <c>5207.1</c>
+              <c>556.6</c>
+              <c>4650.5</c>
+              <c>8</c>
+              <c>37.1</c>
+              <c>208.5</c>
+              <c>302.9</c>
+              <c>1287.3</c>
+              <c>2901.2</c>
+              <c>462</c>
+            </r>
+            <r>
+              <c>1984-12-31</c>
+              <c>5031.3</c>
+              <c>539.2</c>
+              <c>4492.1</c>
+              <c>7.9</c>
+              <c>35.7</c>
+              <c>205.4</c>
+              <c>290.2</c>
+              <c>1263.7</c>
+              <c>2791.3</c>
+              <c>437.1</c>
+            </r>
+            <r>
+              <c>1983-12-31</c>
+              <c>5175</c>
+              <c>537.7</c>
+              <c>4637.3</c>
+              <c>8.3</c>
+              <c>33.7</c>
+              <c>216.5</c>
+              <c>279.2</c>
+              <c>1337.7</c>
+              <c>2869</c>
+              <c>430.8</c>
+            </r>
+            <r>
+              <c>1982-12-31</c>
+              <c>5603.7</c>
+              <c>571.1</c>
+              <c>5032.5</c>
+              <c>9.1</c>
+              <c>34</c>
+              <c>238.9</c>
+              <c>289.1</c>
+              <c>1488.8</c>
+              <c>3084.9</c>
+              <c>458.9</c>
+            </r>
+            <r>
+              <c>1981-12-31</c>
+              <c>5858.2</c>
+              <c>594.3</c>
+              <c>5263.8</c>
+              <c>9.8</c>
+              <c>36</c>
+              <c>258.7</c>
+              <c>289.7</c>
+              <c>1649.5</c>
+              <c>3139.7</c>
+              <c>474.7</c>
+            </r>
+            <r>
+              <c>1980-12-31</c>
+              <c>5950</c>
+              <c>596.6</c>
+              <c>5353.3</c>
+              <c>10.2</c>
+              <c>36.8</c>
+              <c>251.1</c>
+              <c>298.5</c>
+              <c>1684.1</c>
+              <c>3167</c>
+              <c>502.2</c>
+            </r>
+            <r>
+              <c>1979-12-31</c>
+              <c>5565.5</c>
+              <c>548.9</c>
+              <c>5016.6</c>
+              <c>9.8</c>
+              <c>34.7</c>
+              <c>218.4</c>
+              <c>286</c>
+              <c>1511.9</c>
+              <c>2999.1</c>
+              <c>505.6</c>
+            </r>
+            <r>
+              <c>1978-12-31</c>
+              <c>5140.4</c>
+              <c>497.8</c>
+              <c>4642.5</c>
+              <c>9</c>
+              <c>31</c>
+              <c>195.8</c>
+              <c>262.1</c>
+              <c>1434.6</c>
+              <c>2747.4</c>
+              <c>460.5</c>
+            </r>
+            <r>
+              <c>1977-12-31</c>
+              <c>5077.6</c>
+              <c>475.9</c>
+              <c>4601.7</c>
+              <c>8.8</c>
+              <c>29.4</c>
+              <c>190.7</c>
+              <c>247</c>
+              <c>1419.8</c>
+              <c>2729.9</c>
+              <c>451.9</c>
+            </r>
+            <r>
+              <c>1976-12-31</c>
+              <c>5287.3</c>
+              <c>467.8</c>
+              <c>4819.5</c>
+              <c>8.7</c>
+              <c>26.6</c>
+              <c>199.3</c>
+              <c>233.2</c>
+              <c>1448.2</c>
+              <c>2921.3</c>
+              <c>450</c>
+            </r>
+            <r>
+              <c>1975-12-31</c>
+              <c>5298.5</c>
+              <c>487.8</c>
+              <c>4810.7</c>
+              <c>9.6</c>
+              <c>26.3</c>
+              <c>220.8</c>
+              <c>231.1</c>
+              <c>1532.1</c>
+              <c>2804.8</c>
+              <c>473.7</c>
+            </r>
+            <r>
+              <c>1974-12-31</c>
+              <c>4850.4</c>
+              <c>461.1</c>
+              <c>4389.3</c>
+              <c>9.8</c>
+              <c>26.2</c>
+              <c>209.3</c>
+              <c>215.8</c>
+              <c>1437.7</c>
+              <c>2489.5</c>
+              <c>462.2</c>
+            </r>
+            <r>
+              <c>1973-12-31</c>
+              <c>4154.4</c>
+              <c>417.4</c>
+              <c>3737</c>
+              <c>9.4</c>
+              <c>24.5</c>
+              <c>183.1</c>
+              <c>200.5</c>
+              <c>1222.5</c>
+              <c>2071.9</c>
+              <c>442.6</c>
+            </r>
+            <r>
+              <c>1972-12-31</c>
+              <c>3961.4</c>
+              <c>401</c>
+              <c>3560.4</c>
+              <c>9</c>
+              <c>22.5</c>
+              <c>180.7</c>
+              <c>188.8</c>
+              <c>1140.8</c>
+              <c>1993.6</c>
+              <c>426.1</c>
+            </r>
+            <r>
+              <c>1971-12-31</c>
+              <c>4164.7</c>
+              <c>396</c>
+              <c>3768.8</c>
+              <c>8.6</c>
+              <c>20.5</c>
+              <c>188</c>
+              <c>178.8</c>
+              <c>1163.5</c>
+              <c>2145.5</c>
+              <c>459.8</c>
+            </r>
+            <r>
+              <c>1970-12-31</c>
+              <c>3984.5</c>
+              <c>363.5</c>
+              <c>3621</c>
+              <c>7.9</c>
+              <c>18.7</c>
+              <c>172.1</c>
+              <c>164.8</c>
+              <c>1084.9</c>
+              <c>2079.3</c>
+              <c>456.8</c>
+            </r>
+            <r>
+              <c>1969-12-31</c>
+              <c>3680</c>
+              <c>328.7</c>
+              <c>3351.3</c>
+              <c>7.3</c>
+              <c>18.5</c>
+              <c>148.4</c>
+              <c>154.5</c>
+              <c>984.1</c>
+              <c>1930.9</c>
+              <c>436.2</c>
+            </r>
+            <r>
+              <c>1968-12-31</c>
+              <c>3370.2</c>
+              <c>298.4</c>
+              <c>3071.8</c>
+              <c>6.9</c>
+              <c>15.9</c>
+              <c>131.8</c>
+              <c>143.8</c>
+              <c>932.3</c>
+              <c>1746.6</c>
+              <c>393</c>
+            </r>
+            <r>
+              <c>1967-12-31</c>
+              <c>2989.7</c>
+              <c>253.2</c>
+              <c>2736.5</c>
+              <c>6.2</c>
+              <c>14</c>
+              <c>102.8</c>
+              <c>130.2</c>
+              <c>826.6</c>
+              <c>1575.8</c>
+              <c>334.1</c>
+            </r>
+            <r>
+              <c>1966-12-31</c>
+              <c>2670.8</c>
+              <c>220</c>
+              <c>2450.9</c>
+              <c>5.6</c>
+              <c>13.2</c>
+              <c>80.8</c>
+              <c>120.3</c>
+              <c>721</c>
+              <c>1442.9</c>
+              <c>286.9</c>
+            </r>
+            <r>
+              <c>1965-12-31</c>
+              <c>2449</c>
+              <c>200.2</c>
+              <c>2248.8</c>
+              <c>5.1</c>
+              <c>12.1</c>
+              <c>71.7</c>
+              <c>111.3</c>
+              <c>662.7</c>
+              <c>1329.3</c>
+              <c>256.8</c>
+            </r>
+            <r>
+              <c>1964-12-31</c>
+              <c>2388.1</c>
+              <c>190.6</c>
+              <c>2197.5</c>
+              <c>4.9</c>
+              <c>11.2</c>
+              <c>68.2</c>
+              <c>106.2</c>
+              <c>634.7</c>
+              <c>1315.5</c>
+              <c>247.4</c>
+            </r>
+            <r>
+              <c>1963-12-31</c>
+              <c>2180.3</c>
+              <c>168.2</c>
+              <c>2012.1</c>
+              <c>4.6</c>
+              <c>9.4</c>
+              <c>61.8</c>
+              <c>92.4</c>
+              <c>576.4</c>
+              <c>1219.1</c>
+              <c>216.6</c>
+            </r>
+            <r>
+              <c>1962-12-31</c>
+              <c>2019.8</c>
+              <c>162.3</c>
+              <c>1857.5</c>
+              <c>4.6</c>
+              <c>9.4</c>
+              <c>59.7</c>
+              <c>88.6</c>
+              <c>535.2</c>
+              <c>1124.8</c>
+              <c>197.4</c>
+            </r>
+            <r>
+              <c>1961-12-31</c>
+              <c>1906.1</c>
+              <c>158.1</c>
+              <c>1747.9</c>
+              <c>4.8</c>
+              <c>9.4</c>
+              <c>58.3</c>
+              <c>85.7</c>
+              <c>518.9</c>
+              <c>1045.4</c>
+              <c>183.6</c>
+            </r>
+            <r>
+              <c>1960-12-31</c>
+              <c>1887.2</c>
+              <c>160.9</c>
+              <c>1726.3</c>
+              <c>5.1</c>
+              <c>9.6</c>
+              <c>60.1</c>
+              <c>86.1</c>
+              <c>508.6</c>
+              <c>1034.7</c>
+              <c>183</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\markf\AppData\Local\Temp\Engine_12344_f9cbda40bcf2476e8ca308925580f525_\Engine_38372_df788e77401a49deaa0bf6e078e38c2d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\markf\AppData\Local\Temp\Engine_12344_f9cbda40bcf2476e8ca308925580f525_\Engine_38372_d5902c8880f34cb088fcedce8dca368d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="282" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="186" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>Field1</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="378" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>left([JSON_Name],4) == 'data'</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>left([JSON_Name],4) == 'data'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\markf\AppData\Local\Temp\Engine_12344_f9cbda40bcf2476e8ca308925580f525_\Engine_38372_5b6aa0af2ec347ecb0f0865a601fd1ea_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="tonumber(regex_replace([JSON_Name],&quot;data.(\d+).*&quot;,'$1'))+1" field="RecordID" size="1073741823" type="V_WString" />
+            <FormulaField expression="regex_replace([JSON_Name],&quot;data.\d+.(\d+)&quot;,'$1')" field="Field" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID = tonumber(regex_replace([JSON_Name],"data.(\d+).*",'$1'))+1
+Field = re...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="498" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>contains([JSON_Name],"column_names")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>contains([JSON_Name],"column_names")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="786" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="0" />
+            <Field name="1" />
+            <Field name="2" />
+            <Field name="3" />
+            <Field name="4" />
+            <Field name="5" />
+            <Field name="6" />
+            <Field name="7" />
+            <Field name="8" />
+            <Field name="9" />
+            <Field name="10" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Positional</InputMode>
+            <NewName>JSON_ValueString</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" size="2048" source="CrossTab:Header:Field:0:Concat:" type="V_WString" />
+            <Field name="Total" size="2048" source="CrossTab:Header:Field:1:Concat:" type="V_WString" />
+            <Field name="Violent" size="2048" source="CrossTab:Header:Field:2:Concat:" type="V_WString" />
+            <Field name="Property" size="2048" source="CrossTab:Header:Field:3:Concat:" type="V_WString" />
+            <Field name="Murder" size="2048" source="CrossTab:Header:Field:4:Concat:" type="V_WString" />
+            <Field name="Forcible Rape" size="2048" source="CrossTab:Header:Field:5:Concat:" type="V_WString" />
+            <Field name="Robbery" size="2048" source="CrossTab:Header:Field:6:Concat:" type="V_WString" />
+            <Field name="Aggr Assault" size="2048" source="CrossTab:Header:Field:7:Concat:" type="V_WString" />
+            <Field name="Burglary" size="2048" source="CrossTab:Header:Field:8:Concat:" type="V_WString" />
+            <Field name="Larceny Theft" size="2048" source="CrossTab:Header:Field:9:Concat:" type="V_WString" />
+            <Field name="Vehicle Theft" size="2048" source="CrossTab:Header:Field:10:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="594" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="RecordID" />
+          </GroupFields>
+          <HeaderField field="Field" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="0" size="2048" source="CrossTab:Header:Field:0:Concat:" type="V_WString" />
+            <Field name="1" size="2048" source="CrossTab:Header:Field:1:Concat:" type="V_WString" />
+            <Field name="2" size="2048" source="CrossTab:Header:Field:2:Concat:" type="V_WString" />
+            <Field name="3" size="2048" source="CrossTab:Header:Field:3:Concat:" type="V_WString" />
+            <Field name="4" size="2048" source="CrossTab:Header:Field:4:Concat:" type="V_WString" />
+            <Field name="5" size="2048" source="CrossTab:Header:Field:5:Concat:" type="V_WString" />
+            <Field name="6" size="2048" source="CrossTab:Header:Field:6:Concat:" type="V_WString" />
+            <Field name="7" size="2048" source="CrossTab:Header:Field:7:Concat:" type="V_WString" />
+            <Field name="8" size="2048" source="CrossTab:Header:Field:8:Concat:" type="V_WString" />
+            <Field name="9" size="2048" source="CrossTab:Header:Field:9:Concat:" type="V_WString" />
+            <Field name="10" size="2048" source="CrossTab:Header:Field:10:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="702" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Field1" selected="False" />
+            <SelectField field="DownloadHeaders" selected="False" />
+            <SelectField field="JSON_Name" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="regex_replace([JSON_Name],&quot;.*\.(d+)&quot;,'$1')" field="JSON_Name" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[JSON_Name = regex_replace([JSON_Name],".*\.(d+)",'$1')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="690" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="882" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Date" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="False" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="True" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="True" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="94" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="94" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>challenge_7_MarqueeCrew</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
