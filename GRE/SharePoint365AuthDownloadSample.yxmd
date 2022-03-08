@@ -1,0 +1,868 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="6" />
+          <Fields>
+            <Field name="Notes" />
+            <Field name="Name" />
+            <Field name="Value" />
+          </Fields>
+          <Data>
+            <r>
+              <c>The root URL of the site</c>
+              <c>SharePointSiteBaseUrl</c>
+              <c>https://mycompany.com/sites/Sales</c>
+            </r>
+            <r>
+              <c>Relative path to SP folder</c>
+              <c>SharePointFolder</c>
+              <c>/MonthlyReports/</c>
+            </r>
+            <r>
+              <c>Your TenantID</c>
+              <c>TenantId</c>
+              <c>XXX</c>
+            </r>
+            <r>
+              <c>From SP app configuration</c>
+              <c>ClientId</c>
+              <c>XXX</c>
+            </r>
+            <r>
+              <c>From SP app configuration</c>
+              <c>ClientSecret</c>
+              <c>XXX</c>
+            </r>
+            <r>
+              <c>Where to save downloaded files</c>
+              <c>SavePath</c>
+              <c>c:\temp\</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Set Input Parameters
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="138" y="571" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[SharePointSiteBaseUrl] +&#xA;&quot;_api/Web/GetFolderByServerRelativeUrl('&quot; +&#xA;[SharePointFolder] +&#xA;&quot;')/Files/&quot;" field="SharePointApiUrl" size="2048" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Build API Call URL: Get File List</AnnotationText>
+          <DefaultAnnotationText>SharePointApiUrl = [SharePointSiteBaseUrl] +
+"_api/Web/GetFolderByServerRelative...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1290" y="547" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[SharePointSiteBaseUrl] +&#xA;&quot;_api/Web/GetFileByServerRelativeUrl(&quot; +&#xA;&quot;'&quot; +&#xA;[ServerRelativeUrl] +&#xA;&quot;')/$Value&quot; " field="SharePointApiUrl" size="2048" type="V_String" />
+            <FormulaField expression="[SavePath] + [Name]" field="SavePath" size="2048" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Build API Call URL: Download Files</AnnotationText>
+          <DefaultAnnotationText>SharePointApiUrl = [SharePointSiteBaseUrl] +
+"_api/Web/GetFileByServerRelativeUr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1494" y="547" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>3</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Testing: Only Download 3 Files</AnnotationText>
+          <DefaultAnnotationText>First 3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="293" y="485" width="896" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Call SharePoint Web Service: Get File List</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="318" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>SharePointApiUrl</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues>
+                  <Item name="Accept" value="application/json;odata=verbose" />
+                </NameValues>
+                <Fields orderChanged="False">
+                  <Field name="Authorization" />
+                  <Field name="SavePath" selected="False" />
+                  <Field name="SharePointFolder" selected="False" />
+                  <Field name="SharePointSiteBaseUrl" selected="False" />
+                  <Field name="SharePointApiUrl" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="SavePath" selected="False" />
+                  <Field name="SharePointFolder" selected="False" />
+                  <Field name="SharePointSiteBaseUrl" selected="False" />
+                  <Field name="Authorization" selected="False" />
+                  <Field name="SharePointApiUrl" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Make SharePoint Request</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="486" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Parse JSON returned by API call</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="630" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="SavePath" selected="True" />
+                <SelectField field="SharePointFolder" selected="True" />
+                <SelectField field="SharePointSiteBaseUrl" selected="True" />
+                <SelectField field="Authorization" selected="True" />
+                <SelectField field="JSON_Name" selected="True" />
+                <SelectField field="JSON_ValueString" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Get rid of unused fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1062" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="SavePath" />
+                <Field field="SharePointFolder" />
+                <Field field="SharePointSiteBaseUrl" />
+                <Field field="Authorization" />
+                <Field field="ItemIndex" />
+              </GroupFields>
+              <HeaderField field="JSON_Name" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Put everything in a nice column/row layout</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SavePath" size="2048" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="SharePointFolder" size="2048" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="SharePointSiteBaseUrl" size="2048" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="Authorization" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="ItemIndex" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="__metadata_id" size="2048" source="CrossTab:Header:JSON_Name:__metadata.id:Concat:" type="V_WString" />
+                <Field name="__metadata_type" size="2048" source="CrossTab:Header:JSON_Name:__metadata.type:Concat:" type="V_WString" />
+                <Field name="__metadata_uri" size="2048" source="CrossTab:Header:JSON_Name:__metadata.uri:Concat:" type="V_WString" />
+                <Field name="Author___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:Author.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="CheckedOutByUser___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:CheckedOutByUser.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="CheckInComment" size="2048" source="CrossTab:Header:JSON_Name:CheckInComment:Concat:" type="V_WString" />
+                <Field name="CheckOutType" size="2048" source="CrossTab:Header:JSON_Name:CheckOutType:Concat:" type="V_WString" />
+                <Field name="ContentTag" size="2048" source="CrossTab:Header:JSON_Name:ContentTag:Concat:" type="V_WString" />
+                <Field name="CustomizedPageStatus" size="2048" source="CrossTab:Header:JSON_Name:CustomizedPageStatus:Concat:" type="V_WString" />
+                <Field name="EffectiveInformationRightsManagementSettings___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:EffectiveInformationRightsManagementSettings.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="ETag" size="2048" source="CrossTab:Header:JSON_Name:ETag:Concat:" type="V_WString" />
+                <Field name="Exists" size="2048" source="CrossTab:Header:JSON_Name:Exists:Concat:" type="V_WString" />
+                <Field name="InformationRightsManagementSettings___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:InformationRightsManagementSettings.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="IrmEnabled" size="2048" source="CrossTab:Header:JSON_Name:IrmEnabled:Concat:" type="V_WString" />
+                <Field name="Length" size="2048" source="CrossTab:Header:JSON_Name:Length:Concat:" type="V_WString" />
+                <Field name="Level" size="2048" source="CrossTab:Header:JSON_Name:Level:Concat:" type="V_WString" />
+                <Field name="LinkingUri" size="2048" source="CrossTab:Header:JSON_Name:LinkingUri:Concat:" type="V_WString" />
+                <Field name="LinkingUrl" size="2048" source="CrossTab:Header:JSON_Name:LinkingUrl:Concat:" type="V_WString" />
+                <Field name="ListItemAllFields___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:ListItemAllFields.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="LockedByUser___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:LockedByUser.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="MajorVersion" size="2048" source="CrossTab:Header:JSON_Name:MajorVersion:Concat:" type="V_WString" />
+                <Field name="MinorVersion" size="2048" source="CrossTab:Header:JSON_Name:MinorVersion:Concat:" type="V_WString" />
+                <Field name="ModifiedBy___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:ModifiedBy.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="Name" size="2048" source="CrossTab:Header:JSON_Name:Name:Concat:" type="V_WString" />
+                <Field name="Properties___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:Properties.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="ServerRelativeUrl" size="2048" source="CrossTab:Header:JSON_Name:ServerRelativeUrl:Concat:" type="V_WString" />
+                <Field name="TimeCreated" size="2048" source="CrossTab:Header:JSON_Name:TimeCreated:Concat:" type="V_WString" />
+                <Field name="TimeLastModified" size="2048" source="CrossTab:Header:JSON_Name:TimeLastModified:Concat:" type="V_WString" />
+                <Field name="Title" size="2048" source="CrossTab:Header:JSON_Name:Title:Concat:" type="V_WString" />
+                <Field name="UIVersion" size="2048" source="CrossTab:Header:JSON_Name:UIVersion:Concat:" type="V_WString" />
+                <Field name="UIVersionLabel" size="2048" source="CrossTab:Header:JSON_Name:UIVersionLabel:Concat:" type="V_WString" />
+                <Field name="UniqueId" size="2048" source="CrossTab:Header:JSON_Name:UniqueId:Concat:" type="V_WString" />
+                <Field name="VersionEvents___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:VersionEvents.__deferred.uri:Concat:" type="V_WString" />
+                <Field name="Versions___deferred_uri" size="2048" source="CrossTab:Header:JSON_Name:Versions.__deferred.uri:Concat:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="SavePath" order="Asc" />
+                <Field field="SharePointFolder" order="Asc" />
+                <Field field="SharePointSiteBaseUrl" order="Asc" />
+                <Field field="Authorization" order="Asc" />
+                <Field field="ItemIndex" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="942" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="replace([JSON_Name],'d.results.','')" field="JSON_Name" size="1073741823" type="V_WString" />
+                <FormulaField expression="ToNumber(Substring([JSON_Name],0,FindString([JSON_Name],'.')))&#xA;&#xA;" field="ItemIndex" size="4" type="Int32" />
+                <FormulaField expression="Substring([JSON_Name],FindString([JSON_Name], '.') + 1,Length([JSON_Name]))" field="JSON_Name" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[Get the index from the name and get rid of the extra stuff
+]]></AnnotationText>
+              <DefaultAnnotationText>JSON_Name = replace([JSON_Name],'d.results.','')
+ItemIndex = ToNumber(Substring(...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="786" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>JSON_Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-12-02 13:14:48</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>d.__next</Operand>
+                  <StartDate>2019-12-02 13:14:48</StartDate>
+                  <EndDate>2019-12-02 13:14:48</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Filter out pagination info</AnnotationText>
+              <DefaultAnnotationText>[JSON_Name] != "d.__next"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="245" y="53" width="809" height="196" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Authorization</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="498" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>AuthUrl</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="ClientId" selected="False" />
+                  <Field name="ClientSecret" selected="False" />
+                  <Field name="SavePath" selected="False" />
+                  <Field name="SharePointFolder" selected="False" />
+                  <Field name="SharePointSiteBaseUrl" selected="False" />
+                  <Field name="TenantId" selected="False" />
+                  <Field name="AuthUrl" selected="False" />
+                  <Field name="RequestBody" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>POST</HTTPAction>
+                <QueryStringBodyMode>Field</QueryStringBodyMode>
+                <Field>RequestBody</Field>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Call authorization web service</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="612" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Parse Auth Response</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="840" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'Bearer ' + Trim([JSON_ValueString])" field="Authorization" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Create Token Header</AnnotationText>
+              <DefaultAnnotationText><![CDATA[Authorization = 'Bearer ' + Trim([JSON_ValueString])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="726" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>JSON_Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-11-26 11:43:47</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>access_token</Operand>
+                  <StartDate>2019-11-26 11:43:47</StartDate>
+                  <EndDate>2019-11-26 11:43:47</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Just the token</AnnotationText>
+              <DefaultAnnotationText>[JSON_Name] = "access_token"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="270" y="103.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields />
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Parameter Rows to Columns</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ClientId" size="2048" source="CrossTab:Header:Name:ClientId:Concat:" type="V_String" />
+                <Field name="ClientSecret" size="2048" source="CrossTab:Header:Name:ClientSecret:Concat:" type="V_String" />
+                <Field name="SavePath" size="2048" source="CrossTab:Header:Name:SavePath:Concat:" type="V_String" />
+                <Field name="SharePointFolder" size="2048" source="CrossTab:Header:Name:SharePointFolder:Concat:" type="V_String" />
+                <Field name="SharePointSiteBaseUrl" size="2048" source="CrossTab:Header:Name:SharePointSiteBaseUrl:Concat:" type="V_String" />
+                <Field name="TenantId" size="2048" source="CrossTab:Header:Name:TenantId:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="954" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="SavePath" selected="True" />
+                <SelectField field="SharePointFolder" selected="True" />
+                <SelectField field="SharePointSiteBaseUrl" selected="True" />
+                <SelectField field="Authorization" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Remove unnecessary fields</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="384" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="// SharePointFolder must have trailing slash&#xA;If (!EndsWith([SharePointFolder], '/')) then&#xA;	[SharePointFolder] + '/'&#xA;Else&#xA;	[SharePointFolder]&#xA;EndIf&#xA;&#xA;" field="SharePointFolder" size="2048" type="V_String" />
+                <FormulaField expression="// SharePointFolder must not have leading slash&#xA;If (StartsWith([SharePointFolder], '/')) then&#xA;	Substring([SharePointFolder], 1, Length([SharePointFolder]))&#xA;Else&#xA;	[SharePointFolder]&#xA;EndIf" field="SharePointFolder" size="2048" type="V_String" />
+                <FormulaField expression="If(!EndsWith([SharePointSiteBaseUrl], '/')) then&#xA;	[SharePointSiteBaseUrl] + '/'&#xA;Else&#xA;	[SharePointSiteBaseUrl]&#xA;EndIf&#xA;" field="SharePointSiteBaseUrl" size="2048" type="V_String" />
+                <FormulaField expression="Trim([TenantId])" field="TenantId" size="2048" type="V_String" />
+                <FormulaField expression="UrlEncode(Trim([ClientId]))" field="ClientId" size="2048" type="V_String" />
+                <FormulaField expression="UrlEncode(Trim([ClientSecret]))" field="ClientSecret" size="2048" type="V_String" />
+                <FormulaField expression="'https://accounts.accesscontrol.windows.net/' +&#xA;[TenantId] +&#xA;'/tokens/OAuth/2'" field="AuthUrl" size="1073741823" type="V_WString" />
+                <FormulaField expression="'grant_type=client_credentials' +&#xA;'&amp;client_id='+ [ClientId] + '@' + [TenantId] +&#xA;'&amp;client_secret=' + [ClientSecret] +&#xA;'&amp;resource=00000003-0000-0ff1-ce00-000000000000/'  +&#xA;substring(replace([SharePointSiteBaseUrl], 'https://', ''), 0, FindString(replace([SharePointSiteBaseUrl], 'https://', ''), '/')) +&#xA;'@' +&#xA;[TenantId]&#xA;// Note: 00000003-0000-0ff1-ce00-000000000000 is a constant for SharePoint app access" field="RequestBody" size="1073741823" type="V_WString" />
+                <FormulaField expression="// SharePointFolder must have trailing /&#xA;If (!EndsWith([SavePath], '/')) then&#xA;	[SavePath] + '/'&#xA;Else&#xA;	[SavePath]&#xA;EndIf&#xA;" field="SavePath" size="2048" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Clean up parameters, build AuthUrl and Request Body</AnnotationText>
+              <DefaultAnnotationText>SharePointFolder = // SharePointFolder must have trailing slash
+If (!EndsWith([S...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1661" y="497" width="325.8373" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Call SharePoint Web Service: Download Files</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="1686" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>SharePointApiUrl</URLField>
+              <OutputMode>SpecificFile</OutputMode>
+              <OutputFileNameField>SavePath</OutputFileNameField>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="Authorization" />
+                  <Field name="SavePath" selected="False" />
+                  <Field name="SharePointFolder" selected="False" />
+                  <Field name="SharePointSiteBaseUrl" selected="False" />
+                  <Field name="ItemIndex" selected="False" />
+                  <Field name="__metadata_id" selected="False" />
+                  <Field name="__metadata_type" selected="False" />
+                  <Field name="__metadata_uri" selected="False" />
+                  <Field name="Author___deferred_uri" selected="False" />
+                  <Field name="CheckedOutByUser___deferred_uri" selected="False" />
+                  <Field name="CheckInComment" selected="False" />
+                  <Field name="CheckOutType" selected="False" />
+                  <Field name="ContentTag" selected="False" />
+                  <Field name="CustomizedPageStatus" selected="False" />
+                  <Field name="EffectiveInformationRightsManagementSettings___deferred_uri" selected="False" />
+                  <Field name="ETag" selected="False" />
+                  <Field name="Exists" selected="False" />
+                  <Field name="InformationRightsManagementSettings___deferred_uri" selected="False" />
+                  <Field name="IrmEnabled" selected="False" />
+                  <Field name="Length" selected="False" />
+                  <Field name="Level" selected="False" />
+                  <Field name="LinkingUri" selected="False" />
+                  <Field name="LinkingUrl" selected="False" />
+                  <Field name="ListItemAllFields___deferred_uri" selected="False" />
+                  <Field name="LockedByUser___deferred_uri" selected="False" />
+                  <Field name="MajorVersion" selected="False" />
+                  <Field name="MinorVersion" selected="False" />
+                  <Field name="ModifiedBy___deferred_uri" selected="False" />
+                  <Field name="Name" selected="False" />
+                  <Field name="Properties___deferred_uri" selected="False" />
+                  <Field name="ServerRelativeUrl" selected="False" />
+                  <Field name="TimeCreated" selected="False" />
+                  <Field name="TimeLastModified" selected="False" />
+                  <Field name="Title" selected="False" />
+                  <Field name="UIVersion" selected="False" />
+                  <Field name="UIVersionLabel" selected="False" />
+                  <Field name="UniqueId" selected="False" />
+                  <Field name="VersionEvents___deferred_uri" selected="False" />
+                  <Field name="Versions___deferred_uri" selected="False" />
+                  <Field name="SharePointApiUrl" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="SavePath" selected="False" />
+                  <Field name="SharePointFolder" selected="False" />
+                  <Field name="SharePointSiteBaseUrl" selected="False" />
+                  <Field name="Authorization" selected="False" />
+                  <Field name="ItemIndex" selected="False" />
+                  <Field name="__metadata_id" selected="False" />
+                  <Field name="__metadata_type" selected="False" />
+                  <Field name="__metadata_uri" selected="False" />
+                  <Field name="Author___deferred_uri" selected="False" />
+                  <Field name="CheckedOutByUser___deferred_uri" selected="False" />
+                  <Field name="CheckInComment" selected="False" />
+                  <Field name="CheckOutType" selected="False" />
+                  <Field name="ContentTag" selected="False" />
+                  <Field name="CustomizedPageStatus" selected="False" />
+                  <Field name="EffectiveInformationRightsManagementSettings___deferred_uri" selected="False" />
+                  <Field name="ETag" selected="False" />
+                  <Field name="Exists" selected="False" />
+                  <Field name="InformationRightsManagementSettings___deferred_uri" selected="False" />
+                  <Field name="IrmEnabled" selected="False" />
+                  <Field name="Length" selected="False" />
+                  <Field name="Level" selected="False" />
+                  <Field name="LinkingUri" selected="False" />
+                  <Field name="LinkingUrl" selected="False" />
+                  <Field name="ListItemAllFields___deferred_uri" selected="False" />
+                  <Field name="LockedByUser___deferred_uri" selected="False" />
+                  <Field name="MajorVersion" selected="False" />
+                  <Field name="MinorVersion" selected="False" />
+                  <Field name="ModifiedBy___deferred_uri" selected="False" />
+                  <Field name="Name" selected="False" />
+                  <Field name="Properties___deferred_uri" selected="False" />
+                  <Field name="ServerRelativeUrl" selected="False" />
+                  <Field name="TimeCreated" selected="False" />
+                  <Field name="TimeLastModified" selected="False" />
+                  <Field name="Title" selected="False" />
+                  <Field name="UIVersion" selected="False" />
+                  <Field name="UIVersionLabel" selected="False" />
+                  <Field name="UniqueId" selected="False" />
+                  <Field name="VersionEvents___deferred_uri" selected="False" />
+                  <Field name="Versions___deferred_uri" selected="False" />
+                  <Field name="SharePointApiUrl" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Make SharePoint Request</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1830" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Authorization" selected="False" />
+                <SelectField field="SharePointApiUrl" selected="False" />
+                <SelectField field="DownloadHeaders" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Results</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SharePoint365AuthSample</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
